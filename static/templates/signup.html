@@ -1,0 +1,59 @@
+{% extends 'base.html' %}
+
+
+{% block jumbotron %}
+
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+	<div class="container">
+		<h1>Hello, world!</h1>
+		<p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+		<p><a class="btn btn-default btn-lg" href="#" role="button">Learn more &raquo;</a></p>
+	</div>
+</div>
+
+{% endblock %}
+
+
+{% block content %}
+
+<div class="col-sm-4">
+	<h2>Heading</h2>
+	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+</div>
+<div class="col-sm-4">
+	<h2>Heading</h2>
+	<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+	<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+</div>
+
+<div class="col-sm-4">
+	<h1>Pre-Order</h1>
+	<p>Join this course now. Please pre-order.</p>
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="on0" value="Course">
+	<select class="form-control" name="os0">
+		<option value="Basic">Basic €89,00 EUR</option>
+		<option value="Basic+">Basic+ €129,00 EUR</option>
+		<option value="Premium">Premium €149,00 EUR</option>
+	</select>
+	<input type="hidden" name="currency_code" value="EUR">
+	<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+	">
+	<br/>
+	<input type='submit' class='btn btn-success btn-block'>
+	<img alt="" border="0" src="https://www.paypalobjects.com/es_ES/i/scr/pixel.gif" width="1" height="1">
+	</form>
+
+	
+
+</div>
+
+
+
+
+
+
+{% endblock %}
